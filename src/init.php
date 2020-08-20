@@ -5,7 +5,7 @@ add_action( 'init', function() {
 	wp_register_style('custom_cta-block-style-css', plugins_url( 'dist/blocks.style.build.css', dirname( __FILE__ ) ), is_admin() ? array( 'wp-editor' ) : null, null);
 
 	// Register block editor script for backend.
-	wp_register_script('custom_cta-block-js', plugins_url( '/dist/blocks.build.js', dirname( __FILE__ ) ), array( 'wp-blocks', 'wp-i18n', 'wp-element', 'wp-editor' ), null, true);
+	wp_register_script('custom_cta-block-js', plugins_url( '/dist/blocks.build.js', dirname( __FILE__ ) ), array( 'wp-blocks', 'wp-i18n', 'wp-element', 'wp-editor', 'wp-components' ), null, true);
 
 	// Register block editor styles for backend.
 	wp_register_style('custom_cta-block-editor-css', plugins_url( 'dist/blocks.editor.build.css', dirname( __FILE__ ) ), array( 'wp-edit-blocks' ), null);
