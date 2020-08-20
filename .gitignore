@@ -1,0 +1,7 @@
+# Ignore everything
+node_modules
+src/*
+package-lock.json
+
+# But not these files...
+!src/init.php
